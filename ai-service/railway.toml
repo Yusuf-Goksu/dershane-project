@@ -1,5 +1,5 @@
 [build]
-builder = "paketobuildpacks/builder:base"
+builder = "python"
 
 [deploy]
-start = "uvicorn main:app --host 0.0.0.0 --port $PORT"
+start = "uvicorn main:app --host 0.0.0.0 --port ${PORT}"
