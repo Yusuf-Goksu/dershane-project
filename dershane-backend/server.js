@@ -17,6 +17,8 @@ const chatService = require("./services/chatService");
 const app = express();
 const server = http.createServer(app);
 
+
+
 // ----------------------------------------------------
 // 🔹 3) Socket.io (Flutter uyumlu, JWT ZORUNLU DEĞİL)
 // ----------------------------------------------------
@@ -94,9 +96,15 @@ io.on("connection", (socket) => {
 // ----------------------------------------------------
 // 🔹 5) Middleware’ler
 // ----------------------------------------------------
-app.use(cors());
-app.use(express.json());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",              // Admin panel (local)
+    "https://dershane-admin.vercel.app",  // Admin panel (Vercel)
+  ],
+  credentials: true,
+}));
 
+app.use(express.json());
 // ----------------------------------------------------
 // 🔹 6) Database Bağlantısı
 // ----------------------------------------------------
