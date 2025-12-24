@@ -12,8 +12,8 @@ if (!admin.apps.length) {
 }
 
 module.exports = admin;
-
 /*
+
 const admin = require('firebase-admin');
 const serviceAccount = require('./firebase-service-account.json');
 

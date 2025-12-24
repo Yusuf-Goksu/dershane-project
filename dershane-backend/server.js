@@ -115,7 +115,7 @@ connectDB();
 // ----------------------------------------------------
 
 app.get("/", (req, res) => {
-   res.send("🎓 Dershane API çalışıyor (Kurumsal) ✅"); 
+   res.send("Dershane API çalışıyor"); 
 });
 
 app.use("/api/auth", require("./routes/authRoutes"));

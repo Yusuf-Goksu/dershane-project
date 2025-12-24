@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
-  //baseURL: "http://localhost:5000/api", // Railway kullanacaksan sonra değiştiririz
+  //baseURL: "http://localhost:5000/api", // Railway  sonra değiştiririz
 });
 
 api.interceptors.request.use((config) => {
