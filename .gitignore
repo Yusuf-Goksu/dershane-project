@@ -1,0 +1,29 @@
+# ─────────────────────────────────────────────
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+dist/
+
+# ─────────────────────────────────────────────
+# Environment files
+.env
+.env.local
+**/.env
+**/.env.local
+
+# Firebase private keys
+dershane-backend/config/firebase-service-account.json
+
+# ─────────────────────────────────────────────
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+ai-service/venv/
+ai-service/.venv/
+
+# ─────────────────────────────────────────────
+# VSCode
+.vscode/
